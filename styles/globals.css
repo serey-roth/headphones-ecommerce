@@ -150,8 +150,8 @@ span.text-red {
 }
 
 .hero-banner-container {
-  padding: 100px 40px;
-  background-color: #dcdcdc;
+  padding: 100px;
+  background-color: #edd1d1;
   border-radius: 15px;
   position: relative;
   height: 500px;
@@ -161,7 +161,8 @@ span.text-red {
 }
 
 .hero-banner-container .beats-solo {
-  font-size: 20px;
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
 }
 
 .hero-banner-container button {
@@ -179,13 +180,12 @@ span.text-red {
 
 .hero-banner-container h3 {
   font-size: 4rem;
-  margin-top: 4px;
+  margin-top: 1rem;
 }
 
 .hero-banner-container h1 {
   color: white;
-  font-size: 10em;
-  margin-left: -20px;
+  font-size: 8rem;
   text-transform: uppercase;
 }
 
@@ -273,11 +273,19 @@ span.text-red {
 .banner-desc .left h3 {
   font-weight: 900;
   font-size: 80px;
-  margin-left: 25px;
+  padding-left: 0.5rem;
+}
+
+.banner-desc .left h3:nth-of-type(1) {
+  margin-top: 0.5rem;
+}
+
+.banner-desc .left h3:nth-of-type(2) {
+  margin-bottom: 0.5rem;
 }
 
 .banner-desc .left p {
-  margin: 18px;
+  padding-left: 0.5rem;
 }
 
 .footer-banner-image {
