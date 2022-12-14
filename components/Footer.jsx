@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai'
 
 const Footer = () => {
@@ -9,6 +10,12 @@ const Footer = () => {
                 <AiFillInstagram />
                 <AiOutlineTwitter />
             </p>
+            <span>
+                Asset Source: &nbsp;
+                <Link href="https://www.boat-lifestyle.com/">
+                    Boat Lifestyle
+                </Link>
+            </span>
         </div>
     )
 }
