@@ -31,19 +31,24 @@ const ProductDetails = ({ product, products }) => {
         onToggleCart();
     }
     return (
-        <div>
+        <>
             <div className="product-detail-container">
-                <div>
-                    <div className="image-container">
-                        <Image
-                        width={250}
-                        height={250}
+                <div className="big-small-grid">
+                    <Image
+                        width={400}
+                        height={400}
                         src={urlFor(image && image[index]).url()}
                         alt="product-image" 
-                        quality={100}
-                        className="product-detail-image" />
-                    </div>
-                    <div className="small-images-container">
+                        quality={100} 
+                        className="big-grid"
+                        style={{
+                            maxWidth: '100%',
+                            height: 'auto',
+                            borderRadius: "15px",
+                            backgroundColor: "#ebebeb",
+                        }}
+                        />
+                    <div className="small-images-container small-grid">
                         {image?.map((item, i) => 
                         (<Image
                         key={i}
@@ -122,7 +127,7 @@ const ProductDetails = ({ product, products }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
