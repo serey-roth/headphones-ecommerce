@@ -21,8 +21,7 @@ a {
 .main-container {
   max-width: 1400px;
   margin: auto;
-  width: 100%;
-
+  height: 100%; 
 }
 
 .layout {
@@ -192,7 +191,7 @@ span.text-red {
 .hero-banner-image {
   position: absolute;
   top: 0%;
-  right: 20%;
+  right: 10%;
   width: 450px;
   height: 450px;
 }
@@ -290,10 +289,8 @@ span.text-red {
 
 .footer-banner-image {
   position: absolute;
-  /* top: -35%;
-  left: 8%; */
   top: -25%;
-  left: 25%;
+  right: 35%;
 }
 
 .banner-desc .right {
@@ -508,9 +505,27 @@ span.text-red {
 
 }
 
+.big-small-grid {
+  display: grid;
+  grid-template-areas: 
+  "big"
+  "small";
+  align-items: center;
+  justify-content: center;
+}
+
+.big-grid {
+  grid-area: big;
+}
+
+.small-grid {
+  grid-area: small;
+}
+
 .small-images-container {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 5px;
   margin-top: 20px;
 }
 
@@ -534,12 +549,15 @@ span.text-red {
   align-items: center;
 }
 
+.product-detail-desc {
+  width: 100%;
+}
 .product-detail-desc h4 {
   margin-top: 10px;
 }
 
 .product-detail-desc p {
-  margin-top: 10px;
+  padding: 10px 15px 10px 0;
 }
 
 .reviews p {
@@ -731,8 +749,8 @@ span.text-red {
 
   .hero-banner-image {
     width: 60%;
-    height: 45%;
-    top: 35%;
+    height: 35%;
+    top: 45%;
     right: 0%;
   }
 
@@ -756,8 +774,8 @@ span.text-red {
   .footer-banner-image {
     width: 60%;
     left: 40%;
-    top: 26%;
-    height: 45%
+    top: 36%;
+    height: 35%
   }
 
   .banner-desc .left {
@@ -776,7 +794,7 @@ span.text-red {
   .banner-desc .right {
     margin-top: 6rem;
   }
-  
+
   .banner-desc .right h3 {
     font-size: 45px;
   }
@@ -808,7 +826,7 @@ span.text-red {
   }
 
   .cart-container {
-    width: 415px;
+    width: 100%;
     padding: 4px;
   }
 
@@ -822,7 +840,8 @@ span.text-red {
 
   .product {
     padding: 20px 5px;
-
+    display: grid;
+    justify-content: center;
   }
 
   .product .cart-product-image {
