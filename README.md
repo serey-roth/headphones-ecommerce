@@ -2,6 +2,8 @@
 
 SRR Headphones is a full-stack e-commerce website that runs on Next.js and Sanity. It also has Stripe integration.
 
+All product images and details (except for product prices) belong to [boAt company](https://www.boat-lifestyle.com/).
+
 ## Development Features
 * The home page is server-side rendered
 * The product details page is statically generated
